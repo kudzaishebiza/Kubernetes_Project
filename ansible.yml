@@ -1,6 +1,8 @@
 - hosts: all
   become: true
   tasks: 
+     - name: exit from sudo
+       command: exit
      - name: create new deployment
        command: kubectl apply -f /home/ubuntu/Deployment.yml
      - name: create new service
