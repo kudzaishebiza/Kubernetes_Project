@@ -1,6 +1,8 @@
 - hosts: all
   become: true
   tasks: 
+     - name: minikube start
+       command: minikube start --force
      - name: delete old deployment
        command: kubectl delete -f /home/ubuntu/Deployment.yml
      - name: delete old service
