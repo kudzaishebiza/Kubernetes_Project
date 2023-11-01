@@ -1,0 +1,14 @@
+kind: Service                             
+apiVersion: v1
+metadata:
+  name: kudzaishe_app
+  labels:
+    app: kudzaishe_app
+spec:
+  ports:
+    - port: 8080                               
+      targetPort: 80                    
+      nodePort: 31200
+  selector:
+    app: kudzaishe_app                    
+  type: LoadBalancer                   
