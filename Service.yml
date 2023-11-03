@@ -1,4 +1,4 @@
-kind: Service                             
+kind: Service
 apiVersion: v1
 metadata:
   name: kudzaishe
@@ -6,8 +6,8 @@ metadata:
     app: kudzaishe
 spec:
   ports:
-    - port: 8080                               
-      targetPort: 80                    
+    - port: 8080
+      targetPort: 80
       nodePort: 31200
   selector:
     app: kudzaishe
