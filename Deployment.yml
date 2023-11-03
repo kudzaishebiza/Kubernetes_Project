@@ -17,4 +17,4 @@ spec:
           image: kudzaishebiza/pipeline-demo
           imagePullPolicy: Always
           ports:
-          - containerPort: 80
+          - containerPort: 20
