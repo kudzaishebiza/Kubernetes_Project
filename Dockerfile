@@ -25,5 +25,4 @@ EXPOSE 80 22
 #  CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 #  EXPOSE 80
 
-EXPOSE 20
 
