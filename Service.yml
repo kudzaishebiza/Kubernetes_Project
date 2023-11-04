@@ -1,14 +1,14 @@
-kind: Service
+kind: Service                             
 apiVersion: v1
 metadata:
-  name: kudzaishe
+  name: mrdevops
   labels:
-    app: kudzaishe
+    app: mrdevops
 spec:
   ports:
-    - port: 8080
-      targetPort: 20
-      nodePort: 31000
+    - port: 8080                               
+      targetPort: 80                    
+      nodePort: 31200
   selector:
-    app: kudzaishe
-  type: LoadBalancer
+    app: mrdevops                    
+  type: LoadBalancer                   
